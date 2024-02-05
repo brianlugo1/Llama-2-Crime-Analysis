@@ -63,4 +63,40 @@ Step 5:
 Run the command to run a Llama2 Model in the running Docker Container:
 `docker exec -it ollama ollama run llama2`
 
-Like before, you can ask Llama2 any questions.
+Like before, you can ask Llama2 any question.
+
+
+
+Follow these steps for running the project:
+
+Step 1:
+Ensure that you have python installed!
+
+Here is a link for installing python:
+https://www.python.org/downloads/
+
+NOTE:
+For MacOS/Linux use:
+`python3` and `pip3`
+
+Windows use:
+`python` and `pip`
+
+Step 2:
+Open a terminal.
+
+Step 3:
+Run the command:
+`pip3 install -r requirements.txt`
+
+Step 4:
+Run the command:
+`python3 llama.py`
+
+Step 5:
+Ask your local instance of Llama2 a question!
+
+Waiting for a response from your local instance of Llama2 will take
+longer depending on your machine's computing power.
+
+Type `exit` to terminate the program!
