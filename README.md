@@ -55,6 +55,12 @@ Ensure that you have Docker running before moving on past this point.
 Run the command to view running containers in Docker:
 `docker ps`
 
+Run the command to stop the ollama container:
+`docker stop ollama`
+
+Run the command to stop a running container in Docker:
+`docker stop [container_name]`
+
 Step 4:
 Run the command to start a Docker Image of Ollama CPU only:
 `docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama`
