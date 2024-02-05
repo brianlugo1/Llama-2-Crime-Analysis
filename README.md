@@ -55,15 +55,21 @@ Ensure that you have Docker running before moving on past this point.
 Run the command to view running containers in Docker:
 `docker ps`
 
-Run the command to stop the ollama container:
+Step 4:
+Run the command to create and start a Docker Image of Ollama CPU only:
+`docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama`
+
+Run the command to stop the running ollama container:
 `docker stop ollama`
 
-Run the command to stop a running container in Docker:
+Run the command to stop any running container in Docker:
 `docker stop [container_name]`
 
-Step 4:
-Run the command to start a Docker Image of Ollama CPU only:
-`docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama`
+Run the command to restart the already created but stopped Docker Container:
+`docker start ollama`
+
+Run the command to restart any existing Docker Container:
+`docker start [container_name]`
 
 Step 5:
 Run the command to run a Llama2 Model in the running Docker Container:
