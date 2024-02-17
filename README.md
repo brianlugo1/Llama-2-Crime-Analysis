@@ -12,19 +12,65 @@ correlations were found with the Crime data.
 Link for supported Models in the Ollama Library:
 https://ollama.ai/library
 
+Link for Ollama and Docker Tutorial:
+https://collabnix.com/getting-started-with-ollama-and-docker/
+
+Link for running Ollama locally:
+https://medium.com/mad-chatter-tea-party/how-to-run-a-local-model-with-ollama-99cd98665760
+
+Link for fine-tuning Llama2:
+https://www.datacamp.com/tutorial/fine-tuning-llama-2
+
+Link for youtube tutorial for fine-tunning Llama2 model:
+https://www.youtube.com/watch?v=3fsn19OI_C8
+
+Another link for youtube tutorial for fine-tunning:a
+https://www.youtube.com/watch?v=MDA3LUKNl1E
+
+Link to Huggingface Documentation for Llama2:
+https://huggingface.co/docs/transformers/main/model_doc/llama2
+
 
 
 Follow these steps for getting started:
-
 Step 1:
 Download Ollama at the following link:
 https://ollama.ai/download
+
+Llama2 7B Model is pulled by default.
+
+To pull Llama2 13B Model run:
+`ollama pull llama2:13b`
+
+To pull Llama2 70B Model run:
+`ollama pull llama2:70b`
+
+To pull any model you want from the library run:
+`ollama pull [model_name]`
+
+To pull any model and corresponding size run:
+`ollama pull [model_name]:[model_size]`
+
+NOTE:
+
+At least 8GB of RAM is suggested for 7B Models.
+At least 16GB of RAM is needed for 13B Models.
+At least 32GB of RAM is needed for 70B Models.
 
 Step 2:
 After installing Ollama run the command in a terminal:
 `ollama run llama2`
 
-While running Ollama, you can ask any question.
+To run any model run:
+`ollama run [model_name]`
+
+To run any model and corresponding size run:
+`ollama run [model_name]:[model_size]`
+
+To list stored models run the command:
+`ollama list`
+
+While running Ollama, you can ask your model any question you want!
 
 To save your session:
 `/save <model_name>`
@@ -52,32 +98,64 @@ https://www.digitalocean.com/community/tutorials/how-to-debug-and-fix-common-doc
 
 Ensure that you have Docker running before moving on past this point.
 
-Run the command to view running containers in Docker:
+To view running containers in Docker run:
 `docker ps`
 
 Step 4:
 Run the command to create and start a Docker Image of Ollama CPU only:
 `docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama`
 
-Run the command to stop the running ollama container:
+To stop the running ollama container run:
 `docker stop ollama`
 
-Run the command to stop any running container in Docker:
+To stop any running container in Docker run:
 `docker stop [container_name]`
 
-Run the command to restart the already created but stopped Docker Container:
+To restart the already created but stopped Docker Container run:
 `docker start ollama`
 
-Run the command to restart any existing Docker Container:
+To restart any existing Docker Container run:
 `docker start [container_name]`
+
+To rename an existing Docker Container run:
+`docker rename [old_container_name] [new_container_name]`
 
 Step 5:
 Run the command to run a Llama2 Model in the running Docker Container:
 `docker exec -it ollama ollama run llama2`
 
-Like before, you can ask Llama2 any question.
+To run any model and size in any running Docker Container run:
+`docker exec -it [container_name] ollama run [model_name]:[model_size]`
 
+Step 6:
+Follow the instructions for downloading postgres:
+https://postgresapp.com/downloads.html
 
+Follow the instructions for setting up postgres:
+
+Step 1:
+To check if you correctly installed postgres, open a new terminal session.
+
+Run the command `psql`.
+
+If you get a message saying command not found, you have not correctly
+installed postgress. You will not be able to continue with the
+instructions until you correctly install postgres.
+
+Go to the link for help on troubleshooting:
+https://postgresapp.com/documentation/troubleshooting.html
+
+Step 2:
+Run the command `createdb crime` to create the new database in postgresql.
+
+Step 3:
+Run the command `psql crime` to open a connection to the database.
+
+Step 4:
+Run the command `\q` to quit session.
+
+To dump the PostgreSQL openai db:
+Run `pg_dump crime >> file_name.sql`
 
 Follow these steps for running the project:
 

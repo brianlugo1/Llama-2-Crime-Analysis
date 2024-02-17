@@ -1,1 +1,4 @@
 ollama
+# psycopg2 # For production
+psycopg2-binary # For Development
+datetime
