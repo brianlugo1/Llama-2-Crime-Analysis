@@ -101,6 +101,12 @@ Ensure that you have Docker running before moving on past this point.
 To view running containers in Docker run:
 `docker ps`
 
+If you get the following error message in Linux when running the command `docker ps`:
+`permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/json": dial unix /var/run/docker.sock: connect: permission denied`
+
+Run the following command:
+`sudo chmod 666 /var/run/docker.sock`
+
 Step 4:
 Run the command to create and start a Docker Image of Ollama CPU only:
 `docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama`
