@@ -48,6 +48,9 @@ Run the commands:
 `sudo snap remove curl`
 `sudo apt install curl`
 
+Run the command to reboot linux system for installing NVIDIA CRUD drivers:
+`reboot`
+
 Llama2 7B Model is pulled by default.
 
 To pull Llama2 13B Model run:
