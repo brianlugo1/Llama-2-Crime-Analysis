@@ -1,2 +1,5 @@
-LAPD Crime Dataset from 2020 to Present day:
+LAPD Crime Dataset download page:
+https://catalog.data.gov/dataset/crime-data-from-2020-to-present
+
+LAPD Crime Dataset JSON from 2020 to Present day:
 https://data.lacity.org/api/views/2nrs-mtv8/rows.json?accessType=DOWNLOAD
