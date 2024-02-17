@@ -151,6 +151,12 @@ Step 6:
 Follow the instructions for downloading postgres:
 https://postgresapp.com/downloads.html
 
+To install PostgreSQL in linux run:
+`sudo apt install postgresql`
+
+To use the operating system user postgres type the command:
+`sudo -u postgres -i`
+
 Follow the instructions for setting up postgres:
 
 Step 1:
