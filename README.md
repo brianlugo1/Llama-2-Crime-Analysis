@@ -37,6 +37,17 @@ Step 1:
 Download Ollama at the following link:
 https://ollama.ai/download
 
+To install Ollama on linux run:
+`curl -fsSL https://ollama.com/install.sh | sh`
+
+If you get the following message when running the above command:
+`Warning: Failed to open the file /tmp/tmp.NagPY7b0uu/ollama: No such file or`
+`Warning: directory 0.0%curl: (23) Failure writing output to destination`
+
+Run the commands:
+`sudo snap remove curl`
+`sudo apt install curl`
+
 Llama2 7B Model is pulled by default.
 
 To pull Llama2 13B Model run:
