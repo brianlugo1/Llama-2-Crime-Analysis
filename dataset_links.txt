@@ -1,3 +1,6 @@
+Google Dataset Crime Statistics search result link:
+https://datasetsearch.research.google.com/search?src=3&query=crime%20statistics&docid=L2cvMTFsa3ZiajZjcg%3D%3d
+
 LAPD Crime Dataset download page:
 https://catalog.data.gov/dataset/crime-data-from-2020-to-present
 
