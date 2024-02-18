@@ -154,8 +154,11 @@ https://postgresapp.com/downloads.html
 To install PostgreSQL in linux run:
 `sudo apt install postgresql`
 
-To use the operating system user postgres type the command:
+To use the postgres environment in linux type the command:
 `sudo -u postgres -i`
+
+To create a role in postgres in linux type the command:
+`sudo -u postgres createuser [user_name]`
 
 Follow the instructions for setting up postgres:
 
