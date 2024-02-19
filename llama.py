@@ -1,6 +1,9 @@
 from ollama import Client
 from queries import *
 import json
+from dotenv import load_dotenv
+load_dotenv()
+import os
 
 
 
@@ -24,9 +27,10 @@ else:
             messages_for_today.append(stored_message[0])
 
         localhost_url="http://127.0.0.1"
+        host_url=os.environ.get('HOST_URL')
         port="11434"
 
-        client = Client(host=localhost_url+":"+port)
+        client = Client(host=host_url+":"+port)
 
         model_llama_2_7b="llama2"
         model_llama_2_13b="llama2:13b"
