@@ -30,7 +30,7 @@ else:
         host_url=os.environ.get('HOST_URL')
         port="11434"
 
-        client = Client(host=host_url+":"+port)
+        client = Client(host=localhost_url+":"+port)
 
         model_llama_2_7b="llama2"
         model_llama_2_13b="llama2:13b"
