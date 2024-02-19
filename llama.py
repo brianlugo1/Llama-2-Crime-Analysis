@@ -23,10 +23,11 @@ else:
         for stored_message in select_messages_for_today(cur):
             messages_for_today.append(stored_message[0])
 
-        host_url="http://127.0.0.1"
+        localhost_url="http://127.0.0.1"
+        host_url="http://99.83.24.52"
         port="11434"
 
-        client = Client(host=host_url+":"+port)
+        client = Client(host=localhost_url+":"+port)
 
         model_llama_2_7b="llama2"
         model_llama_2_13b="llama2:13b"

@@ -84,6 +84,9 @@ To run any model and corresponding size run:
 To list stored models run the command:
 `ollama list`
 
+To run ollama on a different port run:
+`sudo OLLAMA_HOST=[localIP]:[port] ollama serve`
+
 While running Ollama, you can ask your model any question you want!
 
 To save your session:
