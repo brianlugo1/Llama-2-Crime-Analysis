@@ -24,7 +24,6 @@ else:
             messages_for_today.append(stored_message[0])
 
         localhost_url="http://127.0.0.1"
-        host_url="http://99.83.24.52"
         port="11434"
 
         client = Client(host=localhost_url+":"+port)
