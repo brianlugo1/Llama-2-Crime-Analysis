@@ -3,6 +3,9 @@ import datetime
 
 
 
+# TODO: Add owner attribute
+# TODO: Filter conversations by owner
+
 def create_connection():
     try:
         conn = psycopg2.connect("dbname=crime")
