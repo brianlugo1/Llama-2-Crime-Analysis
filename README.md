@@ -30,6 +30,9 @@ https://www.youtube.com/watch?v=MDA3LUKNl1E
 Link to Huggingface Documentation for Llama2:
 https://huggingface.co/docs/transformers/main/model_doc/llama2
 
+Link for resetting password on Ubuntu:
+https://www.blackdown.org/forgot-ubuntu-password-reset/
+
 
 
 Follow these steps for getting started:
