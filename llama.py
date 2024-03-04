@@ -1,9 +1,9 @@
-from ollama import Client
-from queries import *
+import os
 import json
+from queries import *
+from ollama import Client
 from dotenv import load_dotenv
 load_dotenv()
-import os
 
 
 
@@ -45,12 +45,25 @@ else:
 
         messages_for_today.append(user_message)
 
+        # print("Using Llama 2 7b")
+
+        # print("Using Llama 2 13b")
+
+        # print("Using Llama 2 70b")
+
         completion = client.chat(
             model=model_llama_2_7b,
+
+            # model=model_llama_2_13b,
+
+            # model=model_llama_2_70b,
+
             messages=messages_for_today
         )
 
         insert_messages(conn, cur, json.dumps(completion["message"]).replace("\'", "\'\'"))
+
+        print()
 
         print(completion["message"]["content"])
 

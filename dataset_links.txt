@@ -6,3 +6,19 @@ https://catalog.data.gov/dataset/crime-data-from-2020-to-present
 
 LAPD Crime Dataset JSON from 2020 to Present day:
 https://data.lacity.org/api/views/2nrs-mtv8/rows.json?accessType=DOWNLOAD
+
+
+SF DATASETS
+2018-present
+https://data.sfgov.org/Public-Safety/Police-Department-Incident-Reports-2018-to-Present/wg3w-h783/about_data
+
+Heat Map 
+https://data.sfgov.org/Public-Safety/SF-Crime-Heat-Map/q6gg-sa2p
+
+2003 reports
+https://data.sfgov.org/Public-Safety/Police-Department-Incident-Reports-Historical-2003/tmnf-yvry/about_data
+
+FLORIDA DATASETS
+
+1971-2020
+https://www.fdle.state.fl.us/CJAB/UCR/Annual-Reports/UCR-Offense-Data/01/1971_2020_Total_Crime.aspx
